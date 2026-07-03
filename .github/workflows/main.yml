@@ -1,15 +1,25 @@
 name: sample pipeline
 
 on:
-    push:
+    workflow_dispatch:
+env:
+    NAME: Infosys
 
 jobs:
-    siddhant:
+    job1:
+     env:
+        BRANCH: Pune
      runs-on: ubuntu-vm
-
+     
+    
      steps:
-        - name: Checkout code
-          uses: actions/checkout@v4
+        - name: Company's Name
+          run: echo $NAME
 
-        - name: read my name
-          run: echo "Hello Siddhant"
+        - name:
+          run: echo $BRANCH
+        
+        - name:
+          env:
+            CITY: Nagpur
+          run: echo $CITY
