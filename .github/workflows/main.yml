@@ -9,7 +9,7 @@ jobs:
     job1:
      env:
         BRANCH: Pune
-     runs-on: ubuntu-vm
+     runs-on: ubuntu-latest
      
     
      steps:
