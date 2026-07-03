@@ -7,9 +7,9 @@ jobs:
     siddhant:
      runs-on: ubuntu-vm
 
-    steps:
+     steps:
         - name: Checkout code
           uses: actions/checkout@v4
 
         - name: read my name
-        run: echo "Hello Siddhant"
+          run: echo "Hello Siddhant"
