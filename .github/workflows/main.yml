@@ -5,7 +5,7 @@ on:
 
 jobs:
     siddhant:
-     runs-on: ubuntu-vm
+     runs-on: ubuntu-latest
 
      steps:
         - name: Checkout code
