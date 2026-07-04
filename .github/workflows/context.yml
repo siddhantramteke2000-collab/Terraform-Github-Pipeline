@@ -16,7 +16,7 @@ jobs:
       - name: Print branch
         run: echo "${{github.ref_name}}"
       - name: Print EVENT
-        run: echo "${{github.event}}"
+        run: echo "${{github.event_name}}"
       - name: Print SHA
         run: echo "${{github.sha}}"
         
