@@ -1,25 +1,26 @@
 name: sample pipeline
 
 on:
-    workflow_dispatch:
+  workflow_dispatch:
+  push:
 env:
-    NAME: Infosys
+  NAME: Infosys
 
 jobs:
-    job1:
-     env:
-        BRANCH: Pune
-     runs-on: ubuntu-latest
+  job1:
+    env:
+      BRANCH: Pune
+    runs-on: ubuntu-latest
      
     
-     steps:
-        - name: Company's Name
-          run: echo $NAME
+    steps:
+      - name: Company's Name
+        run: echo $NAME
 
-        - name:
-          run: echo $BRANCH
+      - name:
+        run: echo $BRANCH
         
-        - name:
-          env:
-            CITY: Nagpur
-          run: echo $CITY
+      - name:
+        env:
+          CITY: Nagpur
+        run: echo $CITY
