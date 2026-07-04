@@ -10,14 +10,14 @@ jobs:
 
     steps:
       - name: Print Workflowname
-        run: ${{github.workflow}}
+        run: echo "${{github.workflow}}"
       - name: Print User
-        run: ${{github.actor}}
+        run: echo "${{github.actor}}"
       - name: Print branch
-        run: ${{github.ref_name}}
+        run: echo "${{github.ref_name}}"
       - name: Print EVENT
-        run: ${{github.event}}
+        run: echo "${{github.event}}"
       - name: Print SHA
-        run: ${{github.sha}}
+        run: echo "${{github.sha}}"
         
     
