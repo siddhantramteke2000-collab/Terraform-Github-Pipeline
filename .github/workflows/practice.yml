@@ -1,15 +1,24 @@
 name: practice Pipeline
 on: 
   workflow_dispatch:
-env:
-  NAME: Siddhant
 jobs:
-  job1:
-    env:
-      NAME: Jay
+  validate:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Validation stage
+      run: echo "Inside Validation"
+  plan:
+    needs: validate
     runs-on: ubuntu-latest
     steps:
-      - name: Run Step1
-        env:
-          NAME : Ramteke
-        run: echo "Print $NAME"
+      - name: Planning stage
+        run: echo "Inside plan"
+  apply:
+    needs: plan
+    runs-on: ubuntu-latest
+    if: github.ref_name == 'main'
+    steps:
+      - name: Apply
+        run: echo "Inside Apply"
+      
+    
