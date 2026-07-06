@@ -1,0 +1,14 @@
+name: Practice Pipeline
+on: workflow_dispatch
+env:
+  NAME: Siddhant
+jobs:
+  job1:
+    env:
+      NAME: Jay
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Step1
+      env:
+        NAME : Ramteke
+        run: echo "Print $NAME"
