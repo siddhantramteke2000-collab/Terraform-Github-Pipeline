@@ -1,4 +1,4 @@
-name: Practice Pipeline
+name: 07JULY Pipeline
 on: workflow_dispatch
 env:
   NAME: Siddhant
