@@ -10,6 +10,7 @@ terraform {
     storage_account_name = "siddhantkastorage"
     container_name       = "storetfstate"
     key                  = "practice.tfstate"
+    use_oidc             = true
   }
 }
 provider "azurerm" {
