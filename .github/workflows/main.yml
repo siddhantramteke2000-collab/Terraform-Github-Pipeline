@@ -6,7 +6,7 @@ on:
 permissions:
   id-token: write
   contents: read
-  
+
 jobs:
     plan-stage:
         runs-on: ubuntu-latest
@@ -57,7 +57,6 @@ jobs:
                 subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
             #Terraform Workflow
-
             - name: Terraform Init
               run: terraform init
             - name: Terraform Validation
