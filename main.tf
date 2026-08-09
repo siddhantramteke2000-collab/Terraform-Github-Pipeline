@@ -22,6 +22,7 @@ resource "azurerm_resource_group" "rg" {
   name     = "rg-sid"
   location = "centralindia"
 }
+
 resource "azurerm_virtual_network" "vnet" {
   depends_on          = [azurerm_resource_group.rg]
   name                = "sid-vnet"
