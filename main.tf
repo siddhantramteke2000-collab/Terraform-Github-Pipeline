@@ -8,7 +8,7 @@ terraform {
   backend "azurerm" {
     resource_group_name  = "dev-rg"
     storage_account_name = "siddhantkastorage"
-    container            = "storetfstate"
+    container_name       = "storetfstate"
     key                  = "practice.tfstate"
   }
 }
