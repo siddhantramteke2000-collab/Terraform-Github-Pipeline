@@ -1,4 +1,4 @@
-name: Terraform CI/CD Pipeline
+name: Terraform Workflow Pipeline
 on:
     pull_request:
         branches:
