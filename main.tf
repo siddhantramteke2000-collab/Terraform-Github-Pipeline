@@ -5,6 +5,12 @@ terraform {
       version = "4.78.0"
     }
   }
+  backend "azurerm" {
+    resource_group_name  = "dev-rg"
+    storage_account_name = "siddhantkastorage"
+    container            = "storetfstate"
+    key                  = "practice.tfstate"
+  }
 }
 provider "azurerm" {
   features {}
