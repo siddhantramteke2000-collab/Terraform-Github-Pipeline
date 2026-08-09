@@ -13,6 +13,7 @@ terraform {
     use_oidc             = true
   }
 }
+
 provider "azurerm" {
   features {}
 }
