@@ -2,7 +2,7 @@ name: Terraform Pipeline
 on: 
   push:
     branches: 
-    - main
+    - feature/**
 permissions:
   id-token: write
   contents: read
