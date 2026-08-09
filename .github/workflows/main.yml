@@ -1,4 +1,4 @@
-name: Demo Pipeline
+name: Terraform CI/CD Pipeline
 on:
     pull_request:
         branches:
