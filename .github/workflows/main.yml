@@ -40,6 +40,7 @@ jobs:
                 name: terraform-plan
                 path: tfplan
     apply-stage:
+        needs: plan-stage
         runs-on: ubuntu-latest
         steps:
             #Checkout Code
